@@ -240,6 +240,10 @@ def predict(tweet: str):
     return label, prob
 
 if __name__ == '__main__':
-    exemplo = "Eu realmente amo quando nada funciona ;)"
-    lbl, prb = predict(exemplo)
-    print(f'Input: {exemplo}\nPrevisão: {lbl} (prob={prb:.3f})')
+    exemplo_1 = "Oh great, another Monday morning. So excited;"
+    lbl, prb = predict(exemplo_1)
+    print(f'Input: {exemplo_1}\nPrevisão: {lbl} (prob={prb:.3f})')
+
+    exemplo_2 = "I feel hopeless and alone."
+    lbl, prb = predict(exemplo_2)
+    print(f'Input: {exemplo_2}\nPrevisão: {lbl} (prob={prb:.3f})')
